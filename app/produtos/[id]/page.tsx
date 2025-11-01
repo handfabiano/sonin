@@ -116,16 +116,16 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             {/* Add to Cart Button */}
             <button
               onClick={handleAddToCart}
-              disabled={!product.inStock}
+              disabled={!product.in_stock}
               className={`w-full py-4 rounded-lg font-semibold text-lg transition-all ${
                 added
                   ? 'bg-green-500 text-white'
-                  : product.inStock
+                  : product.in_stock
                   ? 'bg-accent-500 text-white hover:bg-accent-600'
                   : 'bg-gray-300 text-gray-600 cursor-not-allowed'
               }`}
             >
-              {added ? '✓ Adicionado ao Carrinho' : product.inStock ? 'Adicionar ao Carrinho' : 'Produto Esgotado'}
+              {added ? '✓ Adicionado ao Carrinho' : product.in_stock ? 'Adicionar ao Carrinho' : 'Produto Esgotado'}
             </button>
 
             {/* Product Features */}

@@ -17,24 +17,47 @@ Uma loja virtual elegante e moderna para velas aromáticas artesanais e óleos e
 - **TypeScript** - Type safety e melhor experiência de desenvolvimento
 - **Tailwind CSS** - Estilização utilitária e responsiva
 - **Zustand** - Gerenciamento de estado simples e eficiente
+- **Supabase** - Banco de dados PostgreSQL com API REST automática
 - **Next/Image** - Otimização automática de imagens
 
-## 🚀 Como Executar
+## 🚀 Como Executar Localmente
 
 1. **Instalar dependências:**
 ```bash
 npm install
 ```
 
-2. **Executar em modo de desenvolvimento:**
+2. **Configurar variáveis de ambiente:**
+
+Crie um arquivo `.env.local` na raiz do projeto:
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your-project-url.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+Veja `.env.example` para referência.
+
+3. **Executar em modo de desenvolvimento:**
 ```bash
 npm run dev
 ```
 
-3. **Abrir no navegador:**
+4. **Abrir no navegador:**
 ```
 http://localhost:3000
 ```
+
+## 🚀 Deploy na Vercel
+
+Para fazer o deploy completo com banco de dados Supabase, siga o guia completo em:
+
+📘 **[DEPLOY.md](./DEPLOY.md)** - Guia passo a passo de deploy
+
+Resumo rápido:
+1. Criar projeto no Supabase e executar `supabase/schema.sql`
+2. Importar projeto na Vercel
+3. Configurar variáveis de ambiente
+4. Deploy! 🎉
 
 ## 📦 Build para Produção
 
@@ -60,8 +83,11 @@ sonin/
 │   ├── Header.tsx          # Cabeçalho e navegação
 │   └── ProductCard.tsx     # Card de produto
 ├── lib/                     # Utilitários e configurações
-│   ├── products.ts         # Dados dos produtos
-│   └── store.ts            # Estado global (Zustand)
+│   ├── products.ts         # Dados dos produtos (fallback)
+│   ├── store.ts            # Estado global (Zustand)
+│   └── supabase.ts         # Cliente Supabase
+├── supabase/                # Configuração do banco de dados
+│   └── schema.sql          # Schema do banco
 └── public/                  # Arquivos estáticos
 ```
 

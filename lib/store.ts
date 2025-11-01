@@ -8,7 +8,7 @@ export interface Product {
   image: string;
   category: 'candle' | 'oil';
   scent: string;
-  inStock: boolean;
+  in_stock: boolean;
 }
 
 interface CartItem extends Product {

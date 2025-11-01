@@ -27,7 +27,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             fill
             className="object-cover group-hover:scale-110 transition-transform duration-500"
           />
-          {!product.inStock && (
+          {!product.in_stock && (
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
               <span className="text-white font-semibold">Esgotado</span>
             </div>
@@ -59,7 +59,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
             <button
               onClick={handleAddToCart}
-              disabled={!product.inStock}
+              disabled={!product.in_stock}
               className="bg-accent-500 text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

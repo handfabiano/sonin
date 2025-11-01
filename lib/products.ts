@@ -9,7 +9,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1602874801007-e7b2f186c8a8?w=800&q=80',
     category: 'candle',
     scent: 'Lavanda',
-    inStock: true,
+    in_stock: true,
   },
   {
     id: '2',
@@ -19,7 +19,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?w=800&q=80',
     category: 'candle',
     scent: 'Âmbar & Baunilha',
-    inStock: true,
+    in_stock: true,
   },
   {
     id: '3',
@@ -29,7 +29,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80',
     category: 'candle',
     scent: 'Eucalipto & Menta',
-    inStock: true,
+    in_stock: true,
   },
   {
     id: '4',
@@ -39,7 +39,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1602874801007-e7b2f186c8a8?w=800&q=80',
     category: 'candle',
     scent: 'Flor de Cerejeira',
-    inStock: true,
+    in_stock: true,
   },
   {
     id: '5',
@@ -49,7 +49,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80',
     category: 'oil',
     scent: 'Lavanda',
-    inStock: true,
+    in_stock: true,
   },
   {
     id: '6',
@@ -59,7 +59,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80',
     category: 'oil',
     scent: 'Eucalipto',
-    inStock: true,
+    in_stock: true,
   },
   {
     id: '7',
@@ -69,7 +69,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80',
     category: 'oil',
     scent: 'Tea Tree',
-    inStock: true,
+    in_stock: true,
   },
   {
     id: '8',
@@ -79,6 +79,6 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1602874801007-e7b2f186c8a8?w=800&q=80',
     category: 'candle',
     scent: 'Sândalo & Patchouli',
-    inStock: true,
+    in_stock: true,
   },
 ];
