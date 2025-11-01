@@ -92,6 +92,22 @@ Para aceitar pagamentos com cartão de crédito:
 4. Configurar webhooks
 5. Pronto para vender! 🚀
 
+## 👨‍💼 Painel Administrativo
+
+Para gerenciar produtos, pedidos e configurações da loja:
+
+🔐 **[ADMIN-SETUP.md](./ADMIN-SETUP.md)** - Guia completo do painel administrativo
+
+**Funcionalidades:**
+- Gerenciamento completo de produtos (CRUD)
+- Visualização e gestão de pedidos
+- Configuração de regras de frete
+- Upload de imagens
+- Dashboard com estatísticas
+- Logs de atividades
+
+**Acesso:** `/admin/login`
+
 ## 📦 Build para Produção
 
 ```bash
