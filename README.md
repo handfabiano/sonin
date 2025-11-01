@@ -59,6 +59,19 @@ Resumo rápido:
 3. Configurar variáveis de ambiente
 4. Deploy! 🎉
 
+## 📸 Adicionar Suas Imagens
+
+Para personalizar o site com suas próprias fotos:
+
+🖼️ **[QUICK-START-IMAGES.md](./QUICK-START-IMAGES.md)** - Adicione suas imagens em 5 minutos (RECOMENDADO)
+
+📚 **[IMAGES-SETUP.md](./IMAGES-SETUP.md)** - Guia completo de imagens e Supabase Storage
+
+**Onde colocar as imagens:**
+- Banner hero: `public/images/banners/hero-main.jpg`
+- Produtos: `public/images/products/nome-produto.jpg`
+- Logo: `public/images/logos/logo.png`
+
 ## 📦 Build para Produção
 
 ```bash
