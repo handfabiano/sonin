@@ -18,6 +18,7 @@ Uma loja virtual elegante e moderna para velas aromáticas artesanais e óleos e
 - **Tailwind CSS** - Estilização utilitária e responsiva
 - **Zustand** - Gerenciamento de estado simples e eficiente
 - **Supabase** - Banco de dados PostgreSQL com API REST automática
+- **Stripe** - Processamento seguro de pagamentos
 - **Next/Image** - Otimização automática de imagens
 
 ## 🚀 Como Executar Localmente
@@ -31,11 +32,17 @@ npm install
 
 Crie um arquivo `.env.local` na raiz do projeto:
 ```bash
+# Supabase
 NEXT_PUBLIC_SUPABASE_URL=your-project-url.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+
+# Stripe
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_xxxxx
+STRIPE_SECRET_KEY=sk_test_xxxxx
+STRIPE_WEBHOOK_SECRET=whsec_xxxxx
 ```
 
-Veja `.env.example` para referência.
+Veja `.env.example` para referência completa.
 
 3. **Executar em modo de desenvolvimento:**
 ```bash
@@ -71,6 +78,19 @@ Para personalizar o site com suas próprias fotos:
 - Banner hero: `public/images/banners/hero-main.jpg`
 - Produtos: `public/images/products/nome-produto.jpg`
 - Logo: `public/images/logos/logo.png`
+
+## 💳 Configurar Pagamentos (Stripe)
+
+Para aceitar pagamentos com cartão de crédito:
+
+💰 **[STRIPE-SETUP.md](./STRIPE-SETUP.md)** - Guia completo de configuração do Stripe
+
+**Resumo rápido:**
+1. Criar conta no Stripe (gratuita)
+2. Copiar chaves da API (teste e produção)
+3. Adicionar nas variáveis de ambiente
+4. Configurar webhooks
+5. Pronto para vender! 🚀
 
 ## 📦 Build para Produção
 
